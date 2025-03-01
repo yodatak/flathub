@@ -52,8 +52,8 @@ modules:
     make-install-args:
       - INSTALL_SYMLINKS=1
     cleanup:
-      - "/lib/pkgconfig"
-      - "/man"
+      - /lib/pkgconfig
+      - /man
     sources:
       - type: archive
         url: https://www.kernel.org/pub/software/scm/git/git-2.48.1.tar.xz
@@ -62,22 +62,13 @@ modules:
           type: anitya
           project-id: 5350
           stable-only: true
-          url-template: "https://www.kernel.org/pub/software/scm/git/git-$version.tar.xz"
+          url-template: https://www.kernel.org/pub/software/scm/git/git-$version.tar.xz
 
   - name: RimSort
     buildsystem: simple
     build-commands:
-      - mkdir -p /app/bin
-      - cp -R app /app/bin/
-      - mkdir -p /app/bin/todds/
-      - chmod +x todds && cp todds /app/bin/todds/
-
-      - mkdir -p /app/bin/app/todds/
-      - chmod +x todds && cp todds /app/bin/app/todds/
-      - cp -R libs /app/bin/
-      - cp -R libs/* /app/bin/
-      - cp -R libs/* /app/bin/app/
-      - cp -R themes /app/themes
+      - chmod +x todds && cp todds /app/bin/
+      - cp -R app /app/
       - install -D app/__main__.py /app/bin/RimSort
       - install -Dm644 -D themes/default-icons/RimSort_Icon_64x64.svg  ${FLATPAK_DEST}/share/icons/hicolor/64x64/apps/io.github.rimsort.RimSort.svg
 
@@ -85,6 +76,7 @@ modules:
       - type: git
         url: https://github.com/RimSort/RimSort.git
         tag: v1.0.12
+        commit: dc812353098234a145ea9b3c3ad562fd4e5cfc1a
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
