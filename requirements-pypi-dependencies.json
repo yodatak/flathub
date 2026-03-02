@@ -118,26 +118,26 @@
         },
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/6e/45/c51cb248e679a6c6ab14b7a8e3ead3f4a3fe7425fc7a6f98b3f147bec532/numpy-2.3.1-cp312-cp312-manylinux_2_28_x86_64.whl",
-          "sha256": "e7cbf5a5eafd8d230a3ce356d892512185230e4781a361229bd902ff403bc660",
+          "url": "https://files.pythonhosted.org/packages/04/dc/46066ce18d01645541f0186877377b9371b8fa8017fa8262002b4ef22612/numpy-2.4.2-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+          "sha256": "d0d9b7c93578baafcbc5f0b83eaf17b79d345c6f36917ba0c67f45226911d499",
           "x-checker-data": {
             "type": "json",
             "url": "https://pypi.org/pypi/numpy/json",
             "version-query": ".info.version",
-            "url-query": ".releases | .[$version][] | select(.filename==\"numpy-\" + $version + \"-cp312-cp312-manylinux_2_28_x86_64.whl\") | .url",
+            "url-query": ".releases | .[$version][] | select(.filename==\"numpy-\" + $version + \"-cp313-cp313-manylinux_2_28_x86_64.whl\") | .url",
             "name": "numpy",
             "packagetype": "bdist_wheel"
           }
         },
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/e4/c9/06dd4a38974e24f932ff5f98ea3c546ce3f8c995d3f0985f8e5ba48bba19/pillow-11.3.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
-          "sha256": "676b2815362456b5b3216b4fd5bd89d362100dc6f4945154ff172e206a22c024",
+          "url": "https://files.pythonhosted.org/packages/71/24/538bff45bde96535d7d998c6fed1a751c75ac7c53c37c90dc2601b243893/pillow-12.1.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+          "sha256": "47b94983da0c642de92ced1702c5b6c292a84bd3a8e1d1702ff923f183594717",
           "x-checker-data": {
             "type": "json",
             "url": "https://pypi.org/pypi/pillow/json",
             "version-query": ".info.version",
-            "url-query": ".releases | .[$version][] | select(.filename==\"pillow-\" + $version + \"-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl\") | .url",
+            "url-query": ".releases | .[$version][] | select(.filename==\"pillow-\" + $version + \"-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl\") | .url",
             "name": "pillow",
             "packagetype": "bdist_wheel"
           }
@@ -172,13 +172,13 @@
       "sources": [
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/69/f8/693b1a10a891197143c0673fcce5b75fc69132afa81a36e4568c12c8faba/lxml-6.0.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
-          "sha256": "ca50bd612438258a91b5b3788c6621c1f05c8c478e7951899f492be42defc0da",
+          "url": "https://files.pythonhosted.org/packages/d0/34/9e591954939276bb679b73773836c6684c22e56d05980e31d52a9a8deb18/lxml-6.0.2-cp313-cp313-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl",
+          "sha256": "ef9266d2aa545d7374938fb5c484531ef5a2ec7f2d573e62f8ce722c735685fd",
           "x-checker-data": {
             "type": "json",
             "url": "https://pypi.org/pypi/lxml/json",
             "version-query": ".info.version",
-            "url-query": ".releases | .[$version][] | select(.filename==\"lxml-\" + $version + \"-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl\") | .url",
+            "url-query": ".releases | .[$version][] | select(.filename==\"lxml-\" + $version + \"-cp313-cp313-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl\") | .url",
             "name": "lxml",
             "packagetype": "bdist_wheel"
           }
@@ -189,18 +189,18 @@
       "name": "python3-msgspec",
       "buildsystem": "simple",
       "build-commands": [
-        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"msgspec==0.19.0\" --no-build-isolation"
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"msgspec==0.20.0\" --no-build-isolation"
       ],
       "sources": [
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/d0/ef/c5422ce8af73928d194a6606f8ae36e93a52fd5e8df5abd366903a5ca8da/msgspec-0.19.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-          "sha256": "d911c442571605e17658ca2b416fd8579c5050ac9adc5e00c2cb3126c97f73bc",
+          "url": "https://files.pythonhosted.org/packages/28/83/36557b04cfdc317ed8a525c4993b23e43a8fbcddaddd78619112ca07138c/msgspec-0.20.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+          "sha256": "7fac7e9c92eddcd24c19d9e5f6249760941485dff97802461ae7c995a2450111",
           "x-checker-data": {
             "type": "json",
             "url": "https://pypi.org/pypi/msgspec/json",
             "version-query": ".info.version",
-            "url-query": ".releases | .[$version][] | select(.filename==\"msgspec-\" + $version + \"-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl\") | .url",
+            "url-query": ".releases | .[$version][] | select(.filename==\"msgspec-\" + $version + \"-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl\") | .url",
             "name": "msgspec",
             "packagetype": "bdist_wheel"
           }
@@ -268,26 +268,26 @@
       "name": "python3-pygit2",
       "buildsystem": "simple",
       "build-commands": [
-        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pygit2==1.18.0\" --no-build-isolation"
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pygit2\" --no-build-isolation"
       ],
       "sources": [
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/b2/d5/da47df7004cb17e4955df6a43d14b3b4ae77737dff8bf7f8f333196717bf/cffi-1.17.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-          "sha256": "b62ce867176a75d03a665bad002af8e6d54644fad99a3c70905c543130e39d93",
+          "url": "https://files.pythonhosted.org/packages/98/df/0a1755e750013a2081e863e7cd37e0cdd02664372c754e5560099eb7aa44/cffi-2.0.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+          "sha256": "c8d3b5532fc71b7a77c09192b4a5a200ea992702734a2e9279a37f2478236f26",
           "x-checker-data": {
             "type": "json",
             "url": "https://pypi.org/pypi/cffi/json",
             "version-query": ".info.version",
-            "url-query": ".releases | .[$version][] | select(.filename==\"cffi-\" + $version + \"-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl\") | .url",
+            "url-query": ".releases | .[$version][] | select(.filename==\"cffi-\" + $version + \"-cp313-cp313-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl\") | .url",
             "name": "cffi",
             "packagetype": "bdist_wheel"
           }
         },
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/13/a3/a812df4e2dd5696d1f351d58b8fe16a405b234ad2886a0dab9183fb78109/pycparser-2.22-py3-none-any.whl",
-          "sha256": "c3702b6d3dd8c7abc1afa565d7e63d53a1d0bd86cdc24edd75470f4de499cfcc",
+          "url": "https://files.pythonhosted.org/packages/0c/c3/44f3fbbfa403ea2a7c779186dc20772604442dde72947e7d01069cbe98e3/pycparser-3.0-py3-none-any.whl",
+          "sha256": "b727414169a36b7d524c1c3e31839a521725078d7b2ff038656844266160a992",
           "x-checker-data": {
             "type": "pypi",
             "name": "pycparser",
@@ -296,13 +296,13 @@
         },
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/34/99/feb31da1ea52864598d57b84c419a1cddd77b46250015b553d31bc5615f7/pygit2-1.18.0-cp312-cp312-manylinux_2_28_x86_64.whl",
-          "sha256": "d05f5b25758699ccd773723e85ded77c5ffed7f7756d200b0ba26e83b13c58e8",
+          "url": "https://files.pythonhosted.org/packages/d5/80/1a87f6e043e04cfa125380a73ef9f87a8c58292b7d4a6ed2e6203b4cd534/pygit2-1.19.1-cp313-cp313-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl",
+          "sha256": "ef18f1208422d3cac1c109417a5fc6143704cfff8e5de4e1665fa4a89ffe3902",
           "x-checker-data": {
             "type": "json",
             "url": "https://pypi.org/pypi/pygit2/json",
             "version-query": ".info.version",
-            "url-query": ".releases | .[$version][] | select(.filename==\"pygit2-\" + $version + \"-cp312-cp312-manylinux_2_28_x86_64.whl\") | .url",
+            "url-query": ".releases | .[$version][] | select(.filename==\"pygit2-\" + $version + \"-cp313-cp313-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl\") | .url",
             "name": "pygit2",
             "packagetype": "bdist_wheel"
           }
@@ -393,13 +393,13 @@
         },
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/b2/d5/da47df7004cb17e4955df6a43d14b3b4ae77737dff8bf7f8f333196717bf/cffi-1.17.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-          "sha256": "b62ce867176a75d03a665bad002af8e6d54644fad99a3c70905c543130e39d93",
+          "url": "https://files.pythonhosted.org/packages/98/df/0a1755e750013a2081e863e7cd37e0cdd02664372c754e5560099eb7aa44/cffi-2.0.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+          "sha256": "c8d3b5532fc71b7a77c09192b4a5a200ea992702734a2e9279a37f2478236f26",
           "x-checker-data": {
             "type": "json",
             "url": "https://pypi.org/pypi/cffi/json",
             "version-query": ".info.version",
-            "url-query": ".releases | .[$version][] | select(.filename==\"cffi-\" + $version + \"-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl\") | .url",
+            "url-query": ".releases | .[$version][] | select(.filename==\"cffi-\" + $version + \"-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl\") | .url",
             "name": "cffi",
             "packagetype": "bdist_wheel"
           }
@@ -570,13 +570,13 @@
       "name": "python3-SQLAlchemy",
       "buildsystem": "simple",
       "build-commands": [
-        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"SQLAlchemy==2.0.41\" --no-build-isolation"
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"SQLAlchemy\" --no-build-isolation"
       ],
       "sources": [
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/f6/f6/c82ac1851c60851302d8581680573245c8fc300253fc1ff741ae74a6c24d/greenlet-3.2.3-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
-          "sha256": "706d016a03e78df129f68c4c9b4c4f963f7d73534e48a24f5f5a7101ed13dbbb",
+          "url": "https://files.pythonhosted.org/packages/7a/34/259b28ea7a2a0c904b11cd36c79b8cef8019b26ee5dbe24e73b469dea347/greenlet-3.3.2-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+          "sha256": "b6997d360a4e6a4e936c0f9625b1c20416b8a0ea18a8e19cabbefc712e7397ab",
           "x-checker-data": {
             "type": "json",
             "url": "https://pypi.org/pypi/greenlet/json",
@@ -617,8 +617,8 @@
       "sources": [
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/00/f0/2ef431fe4141f5e334759d73e81120492b23b2824336883a91ac04ba710b/cachetools-6.1.0-py3-none-any.whl",
-          "sha256": "1c7bb3cf9193deaf3508b7c5f2a79986c13ea38965c5adcff1f84519cf39163e",
+          "url": "https://files.pythonhosted.org/packages/ed/9e/5faefbf9db1db466d633735faceda1f94aa99ce506ac450d232536266b32/cachetools-7.0.1-py3-none-any.whl",
+          "sha256": "8f086515c254d5664ae2146d14fc7f65c9a4bce75152eb247e5a9c5e6d7b2ecf",
           "x-checker-data": {
             "type": "pypi",
             "name": "cachetools",
@@ -627,8 +627,8 @@
         },
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/66/f3/80a3f974c8b535d394ff960a11ac20368e06b736da395b551a49ce950cce/certifi-2025.7.9-py3-none-any.whl",
-          "sha256": "d842783a14f8fdd646895ac26f719a061408834473cfc10203f6a575beb15d39",
+          "url": "https://files.pythonhosted.org/packages/9a/3c/c17fb3ca2d9c3acff52e30b309f538586f9f5b9c9cf454f3845fc9af4881/certifi-2026.2.25-py3-none-any.whl",
+          "sha256": "027692e4402ad994f1c42e52a4997a9763c646b73e4096e4d5d6db8af1d6f0fa",
           "x-checker-data": {
             "type": "pypi",
             "name": "certifi",
@@ -647,8 +647,8 @@
         },
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl",
-          "sha256": "946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3",
+          "url": "https://files.pythonhosted.org/packages/0e/61/66938bbb5fc52dbdf84594873d5b51fb1f7c7794e9c0f5bd885f30bc507b/idna-3.11-py3-none-any.whl",
+          "sha256": "771a87f49d9defaf64091e6e6fe9c18d4833f140bd19464795bc32d966ca37ea",
           "x-checker-data": {
             "type": "pypi",
             "name": "idna",
@@ -670,11 +670,21 @@
         },
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/7c/e4/56027c4a6b4ae70ca9de302488c5ca95ad4a39e190093d6c1a8ace08341b/requests-2.32.4-py3-none-any.whl",
-          "sha256": "27babd3cda2a6d50b30443204ee89830707d396671944c998b5975b031ac2b2c",
+          "url": "https://files.pythonhosted.org/packages/1e/db/4254e3eabe8020b458f1a747140d32277ec7a271daf1d235b70dc0b4e6e3/requests-2.32.5-py3-none-any.whl",
+          "sha256": "2462f94637a34fd532264295e186976db0f5d453d1cdd31473c85a6a161affb6",
           "x-checker-data": {
             "type": "pypi",
             "name": "requests",
+            "packagetype": "bdist_wheel"
+          }
+        },
+        {
+          "type": "file",
+          "url": "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl",
+          "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+          "x-checker-data": {
+            "type": "pypi",
+            "name": "six",
             "packagetype": "bdist_wheel"
           }
         },
@@ -747,6 +757,42 @@
             "url-query": ".releases | .[$version][] | select(.filename==\"watchdog-\" + $version + \"-py3-none-manylinux2014_x86_64.whl\") | .url",
             "name": "watchdog",
             "packagetype": "bdist_wheel"
+          }
+        }
+      ]
+    },
+    {
+      "name": "python3-zstandard",
+      "buildsystem": "simple",
+      "build-commands": [
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"zstandard==0.25.0\" --no-build-isolation"
+      ],
+      "sources": [
+        {
+          "type": "file",
+          "url": "https://files.pythonhosted.org/packages/63/4b/e3678b4e776db00f9f7b2fe58e547e8928ef32727d7a1ff01dea010f3f13/zstandard-0.25.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+          "sha256": "8e735494da3db08694d26480f1493ad2cf86e99bdd53e8e9771b2752a5c0246a",
+          "x-checker-data": {
+            "type": "pypi",
+            "name": "zstandard"
+          }
+        }
+      ]
+    },
+    {
+      "name": "python3-rapidfuzz",
+      "buildsystem": "simple",
+      "build-commands": [
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"rapidfuzz>=3.14.3\" --no-build-isolation"
+      ],
+      "sources": [
+        {
+          "type": "file",
+          "url": "https://files.pythonhosted.org/packages/32/00/ec8597a64f2be301ce1ee3290d067f49f6a7afb226b67d5f15b56d772ba5/rapidfuzz-3.14.3-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+          "sha256": "43e38c1305cffae8472572a0584d4ffc2f130865586a81038ca3965301f7c97c",
+          "x-checker-data": {
+            "type": "pypi",
+            "name": "rapidfuzz"
           }
         }
       ]

@@ -1,10 +1,10 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/flatpak/flatpak-builder/refs/heads/main/data/flatpak-manifest.schema.json
 app-id: io.github.rimsort.RimSort
 runtime: org.kde.Platform
-runtime-version: "6.9"
+runtime-version: "6.10"
 sdk: org.kde.Sdk
 base: io.qt.PySide.BaseApp
-base-version: "6.9"
+base-version: "6.10"
 cleanup-commands:
   - /app/cleanup-BaseApp.sh
 cleanup:
@@ -49,6 +49,15 @@ finish-args:
 
   # to help python run
   - --env=PYTHONPATH=/app
+
+  # Needed for steamcmd
+  - --allow=multiarch
+
+# Needed for steamcmd
+add-extensions:
+  org.freedesktop.Platform.Compat.i386:
+    directory: lib/i386-linux-gnu
+    version: "24.08"
 
 modules:
   # Python dependencies generated from requirements.txt
@@ -107,6 +116,7 @@ modules:
       - cp -R app /app/
       - cp -R themes /app/themes
       - install -D app/__main__.py /app/bin/RimSort
+      - mkdir -p /app/lib/i386-linux-gnu
 
     post-install:
       - install -Dm644 -D themes/default-icons/RimSort_Icon_64x64.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg
@@ -116,8 +126,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/RimSort/RimSort.git
-        tag: v1.0.24
-        commit: ddafbee18fd5927af730ca3898a46a8e4fb2eab6
+        tag: v1.0.73
+        commit: 6552670836e49d451c35d3c0275c9e862b7eda56
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
